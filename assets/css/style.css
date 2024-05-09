@@ -3,18 +3,18 @@
   --a-color: #149ddd;
   --a-hover-color: #37b3ed;
   --btt-hover-color: #2eafec;
-  --light-blue:#c3e8fa;
+  --light-blue: #c3e8fa;
   --h2color: #173b6c;
   --white: #fff;
   --white2: #eee;
   --bg-color: #040b14;
   --profile-img-color: #2c2f3f;
   --nav-focus-color: #a8a9b4;
-  --navy:#1f5297;
+  --navy: #1f5297;
   --semi-trans-black: rgba(5, 13, 24, 0.3);
-  --shadow-color:rgba(0, 0, 0, 0.12);
-  --semi-trans-blue:rgba(20, 157, 221, 0.75);
-  --semi-gray:rgba(255, 255, 255, 0.5);
+  --shadow-color: rgba(0, 0, 0, 0.12);
+  --semi-trans-blue: rgba(20, 157, 221, 0.75);
+  --semi-gray: rgba(255, 255, 255, 0.5);
 }
 
 /**
@@ -32,6 +32,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: var(--body-color);
 }
+
 a {
   color: var(--a-color);
   text-decoration: none;
@@ -261,6 +262,28 @@ h6 {
   height: 100vh;
   /* background: url("../img/hero-bg.jpg") top center;
   background-size: cover; */
+}
+
+#heroVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-width: 750px) {
+  #heroVideo {
+     display: none;
+  } 
+  body {
+     background: url("/assets/img/hero_bg_frame.png") no-repeat;
+     background-size: cover;
+  }
 }
 
 #hero:before {
