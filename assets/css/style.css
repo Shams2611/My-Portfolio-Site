@@ -1,19 +1,19 @@
 :root {
-  --body-color: #272829;
-  --a-color: #149ddd;
-  --a-hover-color: #37b3ed;
-  --btt-hover-color: #2eafec;
-  --light-blue: #c3e8fa;
-  --h2color: #173b6c;
+  --light: #c3fae9;
+  --accent3: #377A7C;
+  --accent2: #3b9093;
+  --accent: #4597AA;
+  --dark-accent: #307364;
+  --dark-accent2: #194b40;
   --white: #fff;
   --white2: #eee;
-  --bg-color: #040b14;
-  --profile-img-color: #2c2f3f;
-  --nav-focus-color: #a8a9b4;
-  --navy: #1f5297;
-  --semi-trans-black: rgba(5, 13, 24, 0.3);
-  --shadow-color: rgba(0, 0, 0, 0.12);
-  --semi-trans-blue: rgba(20, 157, 221, 0.75);
+  --light-gray: #a8b4b2;
+  --mid-gray: #2c2f3f;
+  --dark-gray: #272829;
+  --black: #040b14;
+  --semi-black: rgba(5, 13, 24, 0.3);
+  --shadow-black: rgba(0, 0, 0, 0.12);
+  --semi-blue: rgba(20, 208, 221, 0.75);
   --semi-gray: rgba(255, 255, 255, 0.5);
 }
 
@@ -29,17 +29,17 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: var(--body-color);
+  font-family: "Source Sans", sans-serif;
+  color: var(--dark-gray);
 }
 
 a {
-  color: var(--a-color);
+  color: var(--accent);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--a-hover-color);
+  color: var(--accent3);
   text-decoration: none;
 }
 
@@ -49,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bitter", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -62,7 +62,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: var(--a-color);
+  background: var(--accent);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -76,7 +76,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: var(--btt-hover-color);
+  background: var(--accent2);
   color: var(--white);
 }
 
@@ -98,7 +98,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: var(--bg-color);
+  background: var(--black);
   overflow-y: auto;
 }
 
@@ -106,7 +106,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid var(--profile-img-color);
+  border: 8px solid var(--mid-gray);
 }
 
 #header .profile h1 {
@@ -116,7 +116,7 @@ h6 {
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #header .profile h1 a,
@@ -128,7 +128,7 @@ h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: var(--profile-img-color);
+  background: var(--mid-gray);
   color: var(--white);
   line-height: 1;
   padding: 8px 0;
@@ -141,7 +141,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: var(--btt-hover-color);
+  background: var(--accent2);
   color: var(--white);
   text-decoration: none;
 }
@@ -195,7 +195,7 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: var(--nav-focus-color);
+  color: var(--light-gray);
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -206,7 +206,7 @@ h6 {
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: var(--nav-focus-color);
+  color: var(--light-gray);
 }
 
 .nav-menu a:hover,
@@ -221,7 +221,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: var(--a-color);
+  color: var(--accent);
 }
 
 /* Mobile Navigation */
@@ -234,7 +234,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: var(--a-color);
+  background-color: var(--accent);
   color: var(--white);
   width: 40px;
   height: 40px;
@@ -288,7 +288,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: var(--semi-trans-black);
+  background: var(--semi-black);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -315,14 +315,14 @@ h6 {
   color: var(--white);
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #hero p span {
   color: var(--white);
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid var(--a-color);
+  border-bottom: 3px solid var(--accent);
 }
 
 @media (min-width: 1024px) {
@@ -366,7 +366,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: var(--h2color);
+  color: var(--dark-accent2);
 }
 
 .section-title h2::after {
@@ -375,7 +375,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--a-color);
+  background: var(--accent);
   bottom: 0;
   left: 0;
 }
@@ -390,7 +390,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: var(--h2color);
+  color: var(--dark-accent2);
 }
 
 .about .content ul {
@@ -411,7 +411,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: var(--a-color);
+  color: var(--accent);
   line-height: 0;
 }
 
@@ -434,7 +434,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: var(--a-color);
+  color: var(--accent);
   float: left;
   line-height: 0;
 }
@@ -444,30 +444,30 @@ section {
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: var(--bg-color);
+  color: var(--black);
   margin-left: 60px;
 }
 
 .facts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Bitter", sans-serif;
   font-size: 14px;
-  color: var(--h2color);
+  color: var(--dark-accent2);
 }
 
 .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: var(--h2color);
+  color: var(--dark-accent2);
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
-  color: var(--navy);
+  color: var(--dark-accent);
 }
 
 /*--------------------------------------------------------------
@@ -486,8 +486,8 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: var(--bg-color);
+  font-family: "Open Sans", sans-serif;
+  color: var(--black);
 }
 
 .skills .progress .skill .val {
@@ -504,7 +504,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: var(--a-color);
+  background-color: var(--accent);
 }
 
 /*--------------------------------------------------------------
@@ -515,13 +515,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: var(--black);
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid var(--navy);
+  border-left: 2px solid var(--dark-accent);
   position: relative;
 }
 
@@ -530,8 +530,8 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
+  font-family: "Open Sans", sans-serif;
+  color: var(--black);
   margin-bottom: 10px;
 }
 
@@ -565,7 +565,7 @@ section {
   left: -9px;
   top: 0;
   background: var(--white);
-  border: 2px solid var(--navy);
+  border: 2px solid var(--dark-accent);
 }
 
 /*--------------------------------------------------------------
@@ -593,14 +593,14 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: var(--black);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: var(--a-color);
+  color: var(--accent);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -643,7 +643,7 @@ section {
   color: var(--white);
   font-size: 28px;
   text-align: center;
-  background: var(--semi-trans-blue);
+  background: var(--semi-blue);
   transition: 0.3s;
   width: 50%;
 }
@@ -653,7 +653,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid var(--a-hover-color);
+  border-left: 1px solid var(--accent3);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -690,16 +690,16 @@ section {
   height: 12px;
   background-color: var(--white);
   opacity: 1;
-  border: 1px solid var(--a-color);
+  border: 1px solid var(--accent);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--a-color);
+  background-color: var(--accent);
 }
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px var(--shadow-color);
+  box-shadow: 0px 0 30px var(--shadow-black);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -748,10 +748,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: var(--a-color);
+  background: var(--accent);
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid var(--a-color);
+  border: 1px solid var(--accent);
 }
 
 .services .icon i {
@@ -765,7 +765,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: var(--a-color);
+  color: var(--accent);
 }
 
 .services .title {
@@ -776,11 +776,11 @@ section {
 }
 
 .services .title a {
-  color: var(--profile-img-color);
+  color: var(--mid-gray);
 }
 
 .services .title a:hover {
-  color: var(--a-color);
+  color: var(--accent);
 }
 
 .services .description {
@@ -813,18 +813,18 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: var(--bg-color);
+  color: var(--black);
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: var(--nav-focus-color);
+  color: var(--light-gray);
   margin: 0;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: var(--light-blue);
+  color: var(--light);
   font-size: 26px;
 }
 
@@ -849,7 +849,7 @@ section {
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px var(--shadow-color);
+  box-shadow: 0px 2px 15px var(--shadow-black);
 }
 
 .testimonials .testimonial-item p::after {
@@ -874,11 +874,11 @@ section {
   height: 12px;
   background-color: var(--white);
   opacity: 1;
-  border: 1px solid var(--a-color);
+  border: 1px solid var(--accent);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--a-color);
+  background-color: var(--accent);
 }
 
 /*--------------------------------------------------------------
@@ -892,12 +892,12 @@ section {
   padding: 30px;
   background: var(--white);
   width: 100%;
-  box-shadow: 0 0 24px 0 var(--shadow-color);
+  box-shadow: 0 0 24px 0 var(--shadow-black);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: var(--a-color);
+  color: var(--accent);
   float: left;
   width: 44px;
   height: 44px;
@@ -914,14 +914,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: var(--bg-color);
+  color: var(--black);
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: var(--h2color);
+  color: var(--dark-accent2);
 }
 
 .contact .info .email p {
@@ -935,7 +935,7 @@ section {
 .contact .info .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: var(--body-color);
+  background: var(--dark-gray);
   color: var(--white);
   line-height: 1;
   padding: 8px 0;
@@ -948,14 +948,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: var(--a-color);
+  background: var(--accent);
   color: var(--white);
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: var(--a-color);
+  background: var(--accent);
   color: var(--white);
 }
 
@@ -1043,7 +1043,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--a-color);
+  background: var(--accent);
   border: 0;
   padding: 10px 24px;
   color: var(--white);
@@ -1052,7 +1052,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: var(--a-hover-color);
+  background: var(--accent3);
 }
 
 @keyframes animate-loading {
@@ -1094,7 +1094,7 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: var(--bg-color);
+  color: var(--black);
   content: "/";
 }
 
@@ -1124,7 +1124,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: var(--bg-color);
+  background: var(--black);
 }
 
 #footer .copyright {
