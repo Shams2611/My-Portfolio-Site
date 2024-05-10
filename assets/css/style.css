@@ -1145,3 +1145,236 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+
+.profile {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px #03e9f4;
+}
+
+.profile h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.profile h1 a:hover {
+  color: #03e9f4;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #03e9f4;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.nav-menu {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-menu li {
+  padding: 10px;
+  display: inline-block;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #03e9f4;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #03e9f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #303030;
+  text-align: center;
+  position: relative;
+}
+
+.section-title p {
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Contact section styling */
+.contact {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  padding: 40px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.info h4 {
+  font-size: 18px;
+  color: #303030;
+  text-transform: uppercase;
+  margin: 15px 0 5px 0;
+}
+
+.info p {
+  margin: 0;
+  padding: 0;
+  color: #555;
+}
+
+.info i {
+  font-size: 20px;
+  color: #50a1ff;
+  margin-right: 10px;
+}
+
+/* Form styling */
+.php-email-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.php-email-form .form-group {
+  margin-bottom: 15px;
+}
+
+.php-email-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.php-email-form input, .php-email-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.php-email-form button[type="submit"] {
+  background: #50a1ff;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background: #3691ff;
+}
+
+
+/* General CSS for smooth transitions */
+*, *::before, *::after {
+  transition: all 0.3s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide-in from left */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide-in from right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Scaling effect for images */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Applying animation to elements */
+.animated {
+  opacity: 0; /* Initially hide the elements */
+  animation-fill-mode: forwards; /* Keep the state of animation end */
+}
+
+.fadeIn {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.slideInLeft {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.slideInRight {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.scaleUp {
+  animation: scaleUp 0.8s ease-out;
+}
